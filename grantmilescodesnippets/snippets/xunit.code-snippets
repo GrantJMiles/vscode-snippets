@@ -1,0 +1,26 @@
+{
+    "xunit skeleton": {
+        "prefix": ["new-xunit", "xunit-test"],
+        "scope": "csharp",
+        "description": "Creates a skeleton xunit file with namespace and usings",
+        "body": [
+            "namespace ${1:MyTestNamespace}",
+            "{",
+            "\tusing Xunit;",
+            "\tusing Moq;",
+            "\tpublic class ${2:MyTestClass}",
+            "\t{",
+            "\t\tpublic ${3:WhatYouAreTesting}_${4:WhatYouAreDoing}_${5:WhatYouExpectToHappen}()",
+            "\t\t{",
+            "\t\t\t// Arrange",
+            "\t\t\t$0",
+            "\t\t\t// Act",
+            "\t\t\t",
+            "\t\t\t// Assert",
+            "\t\t\t",
+            "\t\t}",
+            "\t}",
+            "}",
+        ]
+    }
+}
